@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  width: 400px;
+  color: #ffffff;
+}
+.screen {
+  background-color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px 30px;
+  text-align: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+.calc-button-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.calc-button {
+  border: 1px solid #000000;
+  background-color: #d8d9db;
+  justify-items: right;
+  font-size: 40px;
+  height: 100px;
+  /* I decided to style the buttons with a border and diide the space evenly */
+  flex-basis: 25%;
+}
+.double {
+  flex-basis: 50%;
+}
+.triple {
+  flex-basis: 75%;
+}
+.calc-button:hover {
+  background-color: #ebebeb;
+}
+.calc-button:active {
+  background-color: #bbbcbe;
+}
+.function {
+  background-color: #df974c;
+  color: white;
+}
+.function:hover {
+  background-color: #dfb07e;
+}
+.function:active {
+  background-color: #dd8d37;
+}
